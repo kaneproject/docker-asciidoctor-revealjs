@@ -1,8 +1,6 @@
 FROM asciidoctor/docker-asciidoctor
 
 RUN gem install --no-document bundler
-RUN gem install --no-document pygments.rb
-RUN gem install --no-document coderay
 RUN mkdir /root/project
 COPY Gemfile /root/project
 WORKDIR /root/project
